@@ -1,0 +1,10 @@
+#include "Application.h"
+
+int main(){
+    Application app;
+    while(app.IsRunning()){
+        app.ProcessEvents();
+        app.Update();
+        app.Render();
+    }
+}
